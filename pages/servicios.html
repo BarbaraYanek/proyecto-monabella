@@ -5,29 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <h1><a href="./index.html">Monabella Beauty Salon</a></h1>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./precios/precios.html">Precios</a></li>
-                <li><a href="./precios/nosotras/nosotras.html">Nosotras</a></li>
-                <li><a href="./precios/nosotras/contacto/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
+    <header class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container">
+            <h1><a class="titulo-principal" href="../index.html">Monabella</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios/precios.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios/preguntasfrecuentes/preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios/preguntasfrecuentes/contacto/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="container">
+        <div class="titulo-secundario ">
+            <h2 class=" fw-light h1">Nuestros Servicios</h2>
+        </div>
+
         <div>
-            <h2>Nuestros Servicios</h2>
             <ul>
                 <li><a href="#manicure">Manos</a>
                 </li>
@@ -43,147 +67,253 @@
 
 
         <section id="manicure">
-            <div>
-                <h2>Manos</h2>
-                <div>
-                    <article class="tarjeta__servicio">
-                        <h3 class="tarjeta__titulo">Esmaltado Comun</h3>
-                        <img src="" alt="uñas con esmltado comun" class="tarjeta__img">
-                        <p class="tarjeta__texto">Descripcion del servicio</p>
-                    </article>
+            <h2>Manos</h2>
+            <div class=" p-4 box">
+                <div class="row">
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/esmalte-comun.jpg" alt="" height="200px" class="w-100">
+                    </div>
+                    <div class=" col-lg-8">
+                        <h3 class="card-title">Esmaltado Comun</h3>
+                        <p>El esmaltado tradicional, es un esmalte que se aplica sobre la uña, se
+                            seca al aire y tiene una duracion de, maximo, una semana. Siempre dependiendo del
+                            cuidado que les demos a nuestras uñas. Se puede retirar en casa con el uso de un quita
+                            esmalte.</p>
+                    </div>
                 </div>
-                <div>
-                    <article class="">
+            </div>
+
+            <div class=" p-4 my-5 box">
+                <div class="row">
+
+                    <div class=" col-lg-8">
                         <h3>Esmaltado Semipermanente</h3>
-                        <img src="" alt="uñas con esmaltado semipermanente">
-                        <p>Descripcion del producto</p>
-                    </article>
+                        <p>El esmaltado semipermanente es un tipo de esmalte que, al aplicarse, es
+                            necesario el uso
+                            de
+                            una cabina UV para su secado. Tiene una duracion de 2 a 3 semanas. Es necesario que
+                            acudas
+                            al salon a retirarlo, ya que si intentas removerlo de una manera no adecuada es posible
+                            dañar la uña natural.</p>
+                    </div>
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/semipermanente.jpg" alt="" height="200px" class="w-100">
+                    </div>
                 </div>
-                <div>
-                    <article class="">
-                        <h3>Kapping en gel/polygel</h3>
-                        <img src="" alt="uñas con kapping">
-                        <p>Descripcion del producto</p>
-                    </article>
+            </div>
+
+            <div class=" p-4 box">
+                <div class="row">
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/kapping.jpg" alt="" height="200px" class="w-100">
+                    </div>
+                    <div class=" col-lg-8">
+                        <h3 class="card-title">Kapping en gel</h3>
+                        <p>El kapping es una capa de gel sobre el largo de tu uña que permite
+                            protegerla y evitar
+                            que se
+                            rompa. Ideal para uñas quebradizas. El kapping NO endurece tu uña natural, simplemnte es
+                            una
+                            ayuda para que no se rompan. Dura de 2 a 3 semanas.</p>
+                    </div>
                 </div>
-                <div>
-                    <article class="">
-                        <h3>Esculidas en gel/polygel</h3>
-                        <img src="" alt="uñas con kapping">
-                        <p>Descripcion del producto</p>
-                    </article>
-                </div>
-                <div>
-                    <article class="">
-                        <h3>Decoracion y Nail Art</h3>
-                        <img src="" alt="uñas con nail art">
-                        <p>Descripcion del producto</p>
-                    </article>
+
+            </div>
+
+            <div class=" p-4 my-5 box">
+                <div class="row">
+
+                    <div class=" col-lg-8">
+                        <h3>Esculpidas en gel</h3>
+                        <p>Son uñas artificiales esculpidas sobre tu uña natural, se pueden hacer
+                            de el largo que desees
+                            con el color y los diseños que mas te gusten. Duran de 2 a 3 semanas.</p>
+                    </div>
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/esculpidas.jpg" alt="" height="200px" class="w-100">
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="pedicure">
-            <div>
-                <h2>Pies</h2>
-                <div>
-                    <article class="">
-                        <h3>Belleza de Pies</h3>
-                        <img src="" alt="belleza de pies">
-                        <p>Descripcion del producto</p>
-                    </article>
-                </div>
-                <div>
-                    <article class="">
-                        <h3>Pedicuria profunda</h3>
-                        <img src="" alt="pedicuria profunda">
-                        <p>Descripcion del producto</p>
-                    </article>
+            <h2>Pies</h2>
+
+            <div class=" p-4 box">
+                <div class="row">
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/pedicuria.jpg" alt="" height="200px" class="w-100">
+                    </div>
+                    <div class=" col-lg-8">
+                        <h3 class="card-title">Belleza de Pies</h3>
+                        <p>Es una pedicuria superficial sobre la uña, se remueve cuticula y se
+                            esmalta con esmalte
+                            tradicional o semipermanente</p>
+                    </div>
                 </div>
             </div>
+
+            <div class=" p-4 my-5 box">
+                <div class="row">
+
+                    <div class=" col-lg-8">
+                        <h3>Pedicuria profunda</h3>
+                        <p>La pedicuria profunda incluye la eliminacion de callos, durezas, uñas
+                            encarnadas, etc. Se
+                            esmalta con esmalte tracional o semipermanente.</p>
+                    </div>
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/pedicuria-2.jpg" alt="" height="200px" class="w-100">
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="cejas">
-            <div>
-                <h2>Cejas</h2>
-                <div>
-                    <article class="">
-                        <h3>Perfilado</h3>
-                        <img src="" alt="perfilado de cejas">
-                        <p>Descripcion del producto</p>
-                    </article>
+            <h2>Cejas</h2>
+
+            <div class=" p-4 box">
+                <div class="row">
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/perfilado.jpg" alt="" height="200px" class="w-100">
+                    </div>
+                    <div class=" col-lg-8">
+                        <h3 class="card-title">Perfilado</h3>
+                        <p>El perfilado de cejas es una epilacion con pinza y perfilador para dar
+                            forma y lucir nuestras
+                            cejas mas definidas</p>
+                    </div>
                 </div>
-                <div>
-                    <article class="">
+            </div>
+
+            <div class=" p-4 my-5 box">
+                <div class="row">
+
+                    <div class=" col-lg-8">
                         <h3>Henna</h3>
-                        <img src="" alt="cejas con henna">
-                        <p>Descripcion del producto</p>
-                    </article>
+                        <p>Es un tinte organico que se usa para pintar las cejas para proporcionar
+                            una apariencia de
+                            abundacion y definicion. no solo tiñe el vello sino que tambien la piel por lo que cubre
+                            aquellos huequitos donde alla falta de estos. Tiene uan duracion aproximada de 7 dias,
+                            maximo 10.</p>
+                    </div>
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/henna.jpg" alt="" height="200px" class="w-100">
+                    </div>
                 </div>
-                <div>
-                    <article class="">
-                        <h3>Laminado</h3>
-                        <img src="" alt="laminado de cejas">
-                        <p>Descripcion del producto</p>
-                    </article>
+            </div>
+
+            <div class=" p-4 my-5 box ">
+                <div class="row">
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/laminado.jpg" alt="" height="200px" class="w-100">
+                    </div>
+                    <div class=" col-lg-8">
+                        <h3 class="card-title">Laminado</h3>
+                        <p>El laminado de cejas sirve para alisar y peinar las cejas de forma
+                            permanente. especialmente
+                            recomendado para cejas onduladas y rebeldes. Tambien aporta volumen por lo que es
+                            perfecto
+                            para aquellas que tengan cejas finas. Tiene una duracion de 1 mes.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="pestañas">
-            <div>
-                <h2>Pestañas</h2>
-                <div>
+            <h2>Pestañas</h2>
 
+            <div class=" p-4 box">
+                <div class="row">
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/cejas-pestañas-cover.jpg" alt="" height="200px" class="w-100">
+                    </div>
+                    <div class=" col-lg-8">
+                        <h3 class="card-title">Lifting</h3>
+                        <p>El lifting es un tratamiento que crea una curva de forma natural y
+                            duradera sobre nuestras
+                            pestañas, a su ves con el tinte genera un espesor con un efecto estilo rimel. Dura
+                            alrededor
+                            de 1 mes.</p>
+                    </div>
                 </div>
-                <div>
-                    <article class="">
-                        <h3>Lifting</h3>
-                        <img src="" alt="lifting de pestañas">
-                        <p>Descripcion del producto</p>
-                    </article>
-                </div>
-                <div>
-                    <article class="">
-                        <h3>Pelo x pelo</h3>
-                        <img src="" alt="extenciones de pestañas peloxpelo">
-                        <p>Descripcion del producto</p>
-                    </article>
-                </div>
-                <div>
-                    <article class="">
-                        <h3>2D y 3D</h3>
-                        <img src="" alt="extenciones de pestañas con volumen">
-                        <p>Descripcion del producto</p>
-                    </article>
+            </div>
+
+            <div class=" p-4 my-5 box">
+                <div class="row">
+
+                    <div class=" col-lg-8">
+                        <h3>Pelo x pelo 2D y 3D</h3>
+                        <p>Las extencines de pestañas es un servicio que aporta largo y volumen
+                                mediante la colocacion
+                                de pestañas artificiales sobre cada una de nuestras pestañas. Las pestañas pxp aportan
+                                un
+                                volumen natural, ya que solo se coloca 1 pestaña artifical pr cada una de nuestras
+                                estañas
+                                naturales, en cambio las 2D o 3D aortan un volumen mucho mayor, ya que se colocan 2 o 3
+                                pestañas artificiales por cada una de nuestras pestañas naturales. Tienen una duracion
+                                de
+                                aprox 3 semanas. Es necesario venir a removerlas en el salon ya que una mala remocion
+                                puede
+                                causar daños en nuestras estañas naturales.</p>
+                    </div>
+                    <div class=" col-lg-4  ">
+                        <img src="../multimedia/img/pestañas.jpg" alt="" height="200px" class="w-100">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <hr>
-    <footer>
-        <div>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./precios/precios.html">Precios</a></li>
-                <li><a href="./precios/nosotras/nosotras.html">Nosotras</a></li>
-                <li><a href="./precios/nosotras/contacto/contacto.html">Contacto</a></li>
-            </ul>
+
+    <footer class="text-white text-center text-lg-center">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col">
+                    <ul class="link">
+                        <li><a href="../index.html" class="text-white">Inicio</a></li>
+                        <li><a href="./servicios.html" class="text-white">Servicios</a></li>
+                        <li><a href="./precios/precios.html" class="text-white">Precios</a></li>
+                        <li><a href="./precios/preguntasfrecuentes/preguntasfrecuentes.html" class="text-white">Preguntas Frecuentes</a></li>
+                        <li><a href="./precios/preguntasfrecuentes/contacto/contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col titulo-principal d-flex justify-content-center align-items-center">
+                    <p>MONABELLA</p>
+                </div>
+
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://www.instagram.com/monabella.ok/" target="_blank" class="text-white"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg></a>
+                        </div>
+                        <div class="col">
+                            <a href="" target="_blank" class="text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="30" height="30" fill="currentColor" class="bi bi-whatsapp"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div>
-            <div>
-                <p><a href="https://www.instagram.com/monabella.ok/" target="_blank">Instagram</a></p>
-                <p><a href="" target="_blank">Whatsapp</a></p>
-            </div>
-            <div>
-                <p>Ubicacion<iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.776724561317!2d-58.44906460000001!3d-34.58451569999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5efaa1663b9%3A0x40f6e79a190aa217!2sJorge%20Newbery%203623%2C%20C1427EGC%20CABA!5e0!3m2!1ses!2sar!4v1661380769557!5m2!1ses!2sar"
-                        width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>"</p>
-            </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            Diseñado por Barbara Yanek.
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
