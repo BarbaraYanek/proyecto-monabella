@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-monabella-coder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-sass": "sass --wacht scss/main.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarbaraYanek/proyecto-monabella.git"
+  },
+  "author": "Barbara Yanek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarbaraYanek/proyecto-monabella/issues"
+  },
+  "homepage": "https://github.com/BarbaraYanek/proyecto-monabella#readme"
+}

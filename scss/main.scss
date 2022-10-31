@@ -1,0 +1,238 @@
+@import "./utils/variables";
+
+body {
+    background-color: rgba(241, 176, 192, 0.644);
+}
+
+header {
+    background-color: rgb(248, 184, 195);
+}
+
+.titulo-principal {
+    color: $color-titulo-princial;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 3rem;
+
+    &:visited {
+        color: $color-titulo-princial;
+
+    }
+
+    &:hover {
+        color: $color-titulo-princial;
+    }
+
+    &:active {
+        color: $color-titulo-princial;
+    }
+}
+
+
+
+.nav-item {
+    border-radius: 4px 4px 4px 4px;
+    margin: 3.5px;
+    text-align: center;
+    text-decoration-style: solid;
+    text-decoration-color: currentColor;
+
+    &:hover {
+        background-color: rgb(241, 94, 119);
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+}
+
+.color-rosa {
+    color: $color-titulo-princial;
+}
+
+
+.contenedor {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+    .card {
+        width: 100%;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0px 1px 10px rgb(0, 0, 0, 2);
+        transition: all 400ms ease;
+        text-align: center;
+        box-shadow: 10px 10px rgb(241, 177, 188);
+
+        img {
+            width: 100%;
+            height: 210px;
+        }
+
+        &:hover {
+            transform: translatey(-3%);
+        }
+
+        .card-text {
+            margin-left: 5px;
+        }
+    }
+
+
+
+
+}
+
+
+
+.card:hover {
+    transform: translatey(-3%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(241, 94, 119);
+    color: #FFFFFF;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgb(207, 206, 206);
+    box-shadow: 5px 5px rgb(241, 177, 188);
+}
+
+.btn-primary:hover {
+    color: rgb(241, 94, 119);
+    background-color: #FFFFFF;
+    border: 1px solid rgb(241, 94, 119);
+}
+
+
+
+.widget {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    color: #FFFFFF;
+    text-shadow: 2px 0px black;
+    height: 300px;
+    text-align: center;
+    font-size: 2rem;
+
+    a:visited {
+        color: #FFFFFF;
+    }
+
+
+}
+
+.widget:hover {
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+
+.widget-1 {
+    background-image: url("../multimedia/img/uñas-cover.jpg");
+    background-size: cover;
+
+}
+
+.widget-2 {
+    background-image: url("../multimedia/img/cejas-pestañas-cover.jpg");
+    background-size: cover;
+}
+
+.titulo-secundario {
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+.box {
+    background-color: #ffffff81;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(248, 184, 195);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #FFFFFF;
+}
+
+.link:hover {
+    color: #FFFFFF;
+}
+
+.link:active {
+    color: #FFFFFF;
+}
+
+.horarios {
+    background-color: rgba(236, 167, 178, 0.685);
+
+    p {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+
+    .dia {
+        text-align: left;
+        width: 74%;
+    }
+
+    .hora {
+        text-align: right;
+        width: 24%;
+    }
+}
+
+
+.servicios {
+    p {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+
+    .servicio {
+        text-align: left;
+        width: 50%;
+
+    }
+
+    .precio {
+        text-align: right;
+        width: 48%
+    }
+}
+
+
+
+.info {
+    font-size: 1.2rem;
+}
+
+.preguntas {
+    background-color: #ffffff93;
+}
