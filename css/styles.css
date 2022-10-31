@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: rgba(241, 176, 192, 0.644);
 }
@@ -7,25 +8,20 @@ header {
 }
 
 .titulo-principal {
-  color: white;
+  color: rgb(221, 101, 121);
   margin: 10px;
   text-decoration: none;
   font-size: 3rem;
 }
-
 .titulo-principal:visited {
   color: rgb(221, 101, 121);
-
 }
-
 .titulo-principal:hover {
   color: rgb(221, 101, 121);
 }
-
 .titulo-principal:active {
   color: rgb(221, 101, 121);
 }
-
 
 .nav-item {
   border-radius: 4px 4px 4px 4px;
@@ -33,9 +29,7 @@ header {
   text-align: center;
   text-decoration-style: solid;
   text-decoration-color: currentColor;
-
 }
-
 .nav-item:hover {
   background-color: rgb(241, 94, 119);
   transition-property: all;
@@ -44,45 +38,41 @@ header {
   transition-delay: 0s;
 }
 
-/* .bienvenidos {
-    transform: rotateZ(0);
-    transition-property: all;
-    transition-duration: 2s;
-} */
-
 .color-rosa {
   color: rgb(221, 101, 121);
 }
 
 .contenedor {
   width: 100%;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
 }
-
-.card {
+.contenedor .card {
   width: 100%;
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 2);
-  cursor: default;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
   transition: all 400ms ease;
   text-align: center;
   box-shadow: 10px 10px rgb(241, 177, 188);
 }
+.contenedor .card img {
+  width: 100%;
+  height: 210px;
+}
+.contenedor .card:hover {
+  transform: translatey(-3%);
+}
+.contenedor .card .card-text {
+  margin-left: 5px;
+}
 
 .card:hover {
   transform: translatey(-3%);
-}
-
-.card img {
-  width: 100%;
-  height: 210px;
 }
 
 .btn {
@@ -106,14 +96,7 @@ header {
   border: 1px solid rgb(241, 94, 119);
 }
 
-.card-text {
-  margin-left: 5px;
-}
-
-
-
 .widget {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,24 +106,19 @@ header {
   height: 300px;
   text-align: center;
   font-size: 2rem;
-
 }
-
 .widget a:visited {
   color: #FFFFFF;
 }
 
-
 .widget:hover {
   opacity: 0.9;
   cursor: pointer;
-
 }
 
 .widget-1 {
   background-image: url("../multimedia/img/uñas-cover.jpg");
   background-size: cover;
-
 }
 
 .widget-2 {
@@ -155,8 +133,8 @@ header {
 }
 
 .box {
- background-color: #ffffff81;
- border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5058823529);
+  border-radius: 10px;
 }
 
 footer {
@@ -182,21 +160,17 @@ footer {
 .horarios {
   background-color: rgba(236, 167, 178, 0.685);
 }
-
-.horarios-1 p {
+.horarios p {
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 1.2rem;
-
 }
-
-.dia {
+.horarios .dia {
   text-align: left;
   width: 74%;
 }
-
-.hora {
+.horarios .hora {
   text-align: right;
   width: 24%;
 }
@@ -207,21 +181,21 @@ footer {
   margin-bottom: 5px;
   font-size: 1.2rem;
 }
-
-.servicio {
+.servicios .servicio {
   text-align: left;
   width: 50%;
 }
-
-.precio {
+.servicios .precio {
   text-align: right;
-  width: 48%
+  width: 48%;
 }
 
 .info {
-font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .preguntas {
-  background-color: #ffffff60;
+  background-color: rgba(255, 255, 255, 0.5764705882);
 }
+
+/*# sourceMappingURL=styles.css.map */
