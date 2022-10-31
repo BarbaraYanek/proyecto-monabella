@@ -67,13 +67,6 @@ header {
 .contenedor .card:hover {
   transform: translatey(-3%);
 }
-.contenedor .card .card-text {
-  margin-left: 5px;
-}
-
-.card:hover {
-  transform: translatey(-3%);
-}
 
 .btn {
   display: inline-block;
@@ -132,7 +125,7 @@ header {
   text-align: center;
 }
 
-.box {
+.box-servicio {
   background-color: rgba(255, 255, 255, 0.5058823529);
   border-radius: 10px;
 }
@@ -194,8 +187,8 @@ footer {
   font-size: 1.2rem;
 }
 
-.preguntas {
-  background-color: rgba(255, 255, 255, 0.5764705882);
+.preguntas-frecuentes {
+  background-color: rgba(255, 255, 255, 0.4509803922);
 }
 
 /*# sourceMappingURL=styles.css.map */

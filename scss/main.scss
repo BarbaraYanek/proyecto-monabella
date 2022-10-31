@@ -78,21 +78,7 @@ header {
         &:hover {
             transform: translatey(-3%);
         }
-
-        .card-text {
-            margin-left: 5px;
-        }
     }
-
-
-
-
-}
-
-
-
-.card:hover {
-    transform: translatey(-3%);
 }
 
 .btn {
@@ -116,8 +102,6 @@ header {
     border: 1px solid rgb(241, 94, 119);
 }
 
-
-
 .widget {
 
     display: flex;
@@ -133,20 +117,16 @@ header {
     a:visited {
         color: #FFFFFF;
     }
-
-
 }
 
 .widget:hover {
     opacity: 0.9;
     cursor: pointer;
-
 }
 
 .widget-1 {
     background-image: url("../multimedia/img/uñas-cover.jpg");
     background-size: cover;
-
 }
 
 .widget-2 {
@@ -160,7 +140,7 @@ header {
     text-align: center;
 }
 
-.box {
+.box-servicio {
     background-color: #ffffff81;
     border-radius: 10px;
 }
@@ -233,6 +213,6 @@ footer {
     font-size: 1.2rem;
 }
 
-.preguntas {
-    background-color: #ffffff93;
+.preguntas-frecuentes {
+    background-color: #ffffff73;
 }
