@@ -6,11 +6,13 @@ let horarios = []
 
 const selectServicio = document.getElementById('servicio')
 const selectDia = document.getElementById('dia')
-const selectHora = document.getElementById('hora')
+const selectHora = document.getElementById('horario')
 const nombreCliente = document.getElementById('nombre-cliente')
 const numeroCelular = document.getElementById('numero-celular')
 const btnConfirmar = document.getElementById('confirmar')
+const resultado = document.querySelector('.resultado')
 
+servicios.push(new Servicio('Elija un servicio', 0))
 servicios.push(new Servicio('Esculpidas', 3000))
 servicios.push(new Servicio('Service de esculpidas', 2500))
 servicios.push(new Servicio('Kapping', 2500))
@@ -18,12 +20,14 @@ servicios.push(new Servicio('Semipermanente', 2000))
 servicios.push(new Servicio('Belleza de pies', 2000))
 servicios.push(new Servicio('Pedicuria profunda', 2600))
 
+dias.push(new Dias('Elija un dia'))
 dias.push(new Dias('Martes'))
 dias.push(new Dias('Miercoles'))
 dias.push(new Dias('Jueves'))
 dias.push(new Dias('Viernes'))
 dias.push(new Dias('Sabado'))
 
+horarios.push(new Horarios('Elija un horario'))
 horarios.push(new Horarios('11:00'))
 horarios.push(new Horarios('12:00'))
 horarios.push(new Horarios('13:00'))
@@ -59,15 +63,51 @@ horarios.forEach((horario) => {
 })
 
 
-
+/** necesitamos que todo lo seleccionado se almacene en un lugar
+ * tendriamos que loguear el usuario
+ * hay que acomodar la seccion 'dias' para que se muestre un calendario
+ */
 
 
 // boton
 
-btnConfirmar.addEventListener('click', e => {
-    alert()
+
+btnConfirmar.addEventListener("click", (e) => {
+ e.preventDefault()
+    let error = validarCampos();
+    if (error[0]) {
+        resultado.innerHTML = error[1];
+        resultado.classList.add('red')
+    } else {
+        Swal.fire({
+            icon: 'succes',
+            title: 'Ya casi estamos!',
+            text: 'Para confirmar el turno hablanos por WhatsApp para enviar la seña',
+            confirmButtonText: `<a href="https://wa.me/5491121605038"
+            target="_blank">Enviar Whatsapp</a>`,
+            // footer: '<a href="">Why do I have this issue?</a>'
+          })
+    }
+    
 })
 
+const validarCampos = () => {
+    let error = [];
+    if (nombreCliente.value.length < 5) {
+        error[0] = true;
+        error[1] = 'El nombre no puede contener menos de 5 caracteres'
+        return error;
+    } else if (numeroCelular.value.length < 8 || numeroCelular.value.length > 18){
+        error[0] = true
+        error[1] = 'El numero ingresado no es valido'
+        return error;
+    }
+
+    error[0] = false
+    return error;
+}
+
+/**necesitamos validar que se ingresen los datos del turno */
 
 
 

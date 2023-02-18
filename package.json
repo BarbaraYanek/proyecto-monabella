@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/BarbaraYanek/proyecto-monabella/issues"
   },
-  "homepage": "https://github.com/BarbaraYanek/proyecto-monabella#readme"
+  "homepage": "https://github.com/BarbaraYanek/proyecto-monabella#readme",
+  "dependencies": {
+    "sweetalert2": "^11.4.8"
+  }
 }
